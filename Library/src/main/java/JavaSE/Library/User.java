@@ -1,7 +1,9 @@
 package JavaSE.Library;
 
-public class User {
+import java.util.ArrayList;
 
+public class User {
+	
 	private int userID;
 
 	private String userName;
@@ -15,7 +17,8 @@ public class User {
 		this.userAddress = userAddress;
 		this.userPhoneNumber = userPhoneNumber;
 	}
-
+	
+	
 	public int getUserID() {
 		return userID;
 	}
@@ -47,4 +50,5 @@ public class User {
 	public void setUserPhoneNumber(int userPhoneNumber) {
 		this.userPhoneNumber = userPhoneNumber;
 	}
-}
+	
+	}

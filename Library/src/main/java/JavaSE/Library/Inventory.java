@@ -63,4 +63,13 @@ public class Inventory {
 	public void updateDuration() {
 
 	}
+	
+	public Item getItemByID(int id) {
+		for (Item i : items) {
+			if (i.getID() == id) {
+				return i;
+			}
+		}
+		return null;
+	}
 }

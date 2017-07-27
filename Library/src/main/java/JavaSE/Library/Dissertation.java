@@ -6,8 +6,8 @@ public class Dissertation extends Item {
 	private String university;
 	private String supervisor;
 
-	public Dissertation(String author, String title, double price, int yearWrote, int loanDuration, boolean fiction) {
-		super(author, title, price, yearWrote, loanDuration, fiction);
+	public Dissertation(int id, String author, String title, double price, int yearWrote, int loanDuration, boolean fiction) {
+		super(id, author, title, price, yearWrote, loanDuration, fiction);
 		// TODO Auto-generated constructor stub
 	}
 

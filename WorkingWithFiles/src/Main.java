@@ -20,7 +20,7 @@ public class Main {
 		People.add(a3);
 		People.add(a4);
 		People.add(a5);
-
+//writefile
 		try {
 			PrintWriter w = new PrintWriter("C:\\Users\\Administrator\\Desktop\\Attributes.txt", "UTF-8");
 
@@ -40,29 +40,29 @@ public class Main {
 			e.printStackTrace();
 		}
 		
-		
-			try {
-				Scanner s = new Scanner (new File("C:\\Users\\Administrator\\Desktop\\Attributes.txt"));
-				ArrayList<Attributes> readFile = new ArrayList<Attributes>();
-				
-				while (s.hasNextLine()) {
-					String[] si=s.nextLine().split(", ");
-					
-					for (int i = 0; i < si.length; i++)
-					{
-						System.out.println(si[i]);
-					}
-					System.out.println("");
-					int n = Integer.parseInt(si[2]);
-					Attributes fileRead = new Attributes (si[0],si[1],n);
-					readFile.add(fileRead);
-				}
-				
-			} catch (FileNotFoundException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			
+//		readfile
+//			try {
+//				Scanner s = new Scanner (new File("C:\\Users\\Administrator\\Desktop\\Attributes.txt"));
+//				ArrayList<Attributes> readFile = new ArrayList<Attributes>();
+//				
+//				while (s.hasNextLine()) {
+//					String[] si=s.nextLine().split(", ");
+//					
+//					for (int i = 0; i < si.length; i++)
+//					{
+//						System.out.println(si[i]);
+//					}
+//					System.out.println("");
+//					int n = Integer.parseInt(si[2]);
+//					Attributes fileRead = new Attributes (si[0],si[1],n);
+//					readFile.add(fileRead);
+//				}
+//				
+//			} catch (FileNotFoundException e) {
+//				// TODO Auto-generated catch block
+//				e.printStackTrace();
+//			}
+//			
 		
 
 	}

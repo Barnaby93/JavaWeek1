@@ -2,56 +2,56 @@ package JavaSE.Library;
 
 public abstract class Item {
 
-	private String Author;
-	private String Title;
+	private String author;
+	private String title;
 
-	private int ID;
-	private double Price;
+	private int id;
+	private double price;
 	private int yearWrote;
 	private int loanDuration;
 
-	private boolean Fiction;
+	private boolean fiction;
 
-	public Item(String author, String title, double price, int yearWrote, int loanDuration, boolean fiction) {
-		super();
-		Author = author;
-		Title = title;
-		Price = price;
+	public Item(int id, String author, String title, double price, int yearWrote, int loanDuration, boolean fiction) {
+		this.id = id;
+		this.author = author;
+		this.title = title;
+		this.price = price;
 		this.yearWrote = yearWrote;
 		this.loanDuration = loanDuration;
-		Fiction = fiction;
+		this.fiction = fiction;
 	}
 
 	public String getAuthor() {
-		return Author;
+		return author;
 	}
 
 	public void setAuthor(String author) {
-		Author = author;
+		this.author = author;
 	}
 
 	public String getTitle() {
-		return Title;
+		return title;
 	}
 
 	public void setTitle(String title) {
-		Title = title;
+		this.title = title;
 	}
 
 	public int getID() {
-		return ID;
+		return id;
 	}
 
 	public void setID(int iD) {
-		ID = iD;
+		id = iD;
 	}
 
 	public double getPrice() {
-		return Price;
+		return price;
 	}
 
 	public void setPrice(double price) {
-		Price = price;
+		this.price = price;
 	}
 
 	public int getYearWrote() {
@@ -71,11 +71,11 @@ public abstract class Item {
 	}
 
 	public boolean isFiction() {
-		return Fiction;
+		return fiction;
 	}
 
 	public void setFiction(boolean fiction) {
-		Fiction = fiction;
+		this.fiction = fiction;
 	}
 
 }

@@ -6,8 +6,8 @@ public class govDocs extends Item {
 
 	private String country;
 
-	public govDocs(String author, String title, double price, int yearWrote, int loanDuration, boolean fiction) {
-		super(author, title, price, yearWrote, loanDuration, fiction);
+	public govDocs(int id, String author, String title, double price, int yearWrote, int loanDuration, boolean fiction) {
+		super(id, author, title, price, yearWrote, loanDuration, fiction);
 		// TODO Auto-generated constructor stub
 	}
 

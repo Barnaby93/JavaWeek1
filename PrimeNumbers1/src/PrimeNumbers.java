@@ -18,7 +18,7 @@ public class PrimeNumbers {
 		ArrayList<Integer> p = new ArrayList<Integer>();
 		p.add(2); // adds first prime number as a starting point
 
-		//System.out.println(p.get(0));
+		// System.out.println(p.get(0));
 
 		for (int i = 3; i <= upperLimit; i++) {
 			for (x = 0; x < Math.sqrt(p.size()); x++) {

@@ -13,7 +13,7 @@ public class InventoryTest {
 	@Test
 	public void checkOutTest() {
 		Inventory inv = new Inventory();
-		Book b = new Book("Barnaby Dickens", "The adventures of the curly wurly", 12.45, 1963, 14, true, 250, true);
+		Book b = new Book(1, "Barnaby Dickens", "The adventures of the curly wurly", 12.45, 1963, 14, true, 250, true);
 		inv.addItem(b);
 
 		User u = new User(123, "Barney1993", "113 Manchester ", 1612355652);
@@ -29,7 +29,7 @@ public class InventoryTest {
 	public void checkInTest() {
 		
 		Inventory inv = new Inventory();
-		Book b = new Book("Barnaby Dickens", "The adventures of the curly wurly", 12.45, 1963, 14, true, 250, true);
+		Book b = new Book(1, "Barnaby Dickens", "The adventures of the curly wurly", 12.45, 1963, 14, true, 250, true);
 
 		User u = new User(123, "Barney1993", "113 Manchester ", 1612355652);
 		
@@ -51,7 +51,7 @@ public class InventoryTest {
 	@Test
 	public void updatePriceCheck() {
 		Inventory inv = new Inventory();
-		Book b = new Book("Barnaby Dickens", "The adventures of the curly wurly", 12.45, 1963, 14, true, 250, true);
+		Book b = new Book(1, "Barnaby Dickens", "The adventures of the curly wurly", 12.45, 1963, 14, true, 250, true);
 		inv.addItem(b);
 		Assert.assertTrue("Price is not correct ", b.getPrice() == 12.45);
 
@@ -65,7 +65,7 @@ public class InventoryTest {
 
 		Inventory inv = new Inventory();
 
-		Book b = new Book("Barnaby Dickens", "The adventures of the curly wurly", 12.45, 1963, 14, true, 250, true);
+		Book b = new Book(1, "Barnaby Dickens", "The adventures of the curly wurly", 12.45, 1963, 14, true, 250, true);
 		inv.addItem(b);
 
 		ArrayList<Item> i = inv.getInventory();
@@ -77,7 +77,7 @@ public class InventoryTest {
 	public void removeItemFromInventoryTest() {
 
 		Inventory inv = new Inventory();
-		Book b = new Book("Barnaby Dickens", "The adventures of the curly wurly", 12.45, 1963, 14, true, 250, true);
+		Book b = new Book(1, "Barnaby Dickens", "The adventures of the curly wurly", 12.45, 1963, 14, true, 250, true);
 		inv.addItem(b);
 
 		ArrayList<Item> i = inv.getInventory();

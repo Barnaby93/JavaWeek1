@@ -6,9 +6,9 @@ public class Book extends Item {
 
 	private boolean hardBack;
 
-	public Book(String author, String title, double price, int yearWrote, int loanDuration, boolean fiction,
+	public Book(int id, String author, String title, double price, int yearWrote, int loanDuration, boolean fiction,
 			int numberOfPages, boolean hardBack) {
-		super(author, title, price, yearWrote, loanDuration, fiction);
+		super(id, author, title, price, yearWrote, loanDuration, fiction);
 		this.numberOfPages = numberOfPages;
 		this.hardBack = hardBack;
 	}
